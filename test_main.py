@@ -4,6 +4,7 @@ import pytest
 from main import app, tasks, Task
 
 
+# This decorator is used to mark the test function as an asynchronous test function. It tells pytest to run the function in an event loop.
 @pytest.mark.asyncio
 async def test_create_task():
     task_id = str(uuid4())
